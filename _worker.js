@@ -1,7 +1,7 @@
 ﻿
 import { connect } from 'cloudflare:sockets';
 
-let userID = '';
+let userID = '28c22e8c-db11-4f2e-9795-b6c531b369a5';
 let proxyIP = '';
 let DNS64Server = '';
 //let sub = '';
@@ -5381,7 +5381,7 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, fak
 
                 return randomIP.join('.');
             }
-            addresses = addresses.concat('127.0.0.1:1234#CFnat');
+            addresses = addresses.concat('link.ddstl.com:1234#CFnat-圣何塞','link.ddstl.com:2234#CFnat-阿什本','link.ddstl.com:3234#CFnat-香港','link.ddstl.com:4234#CFnat-洛杉矶','link.ddstl.com:5234#CFnat-伦敦','10.0.0.3:1234#CFnat-圣何塞','10.0.0.3:2234#CFnat-阿什本','10.0.0.3:3234#CFnat-香港','10.0.0.3:4234#CFnat-洛杉矶','10.0.0.3:5234#CFnat-伦敦');
             let counter = 1;
             if (hostName.includes("worker") || hostName.includes("notls")) {
                 const randomPorts = httpPorts.concat('80');
@@ -7195,4 +7195,5 @@ function config_Html(token = "test", proxyhost = "") {
 </html>`;
 
     return html;
+
 }
